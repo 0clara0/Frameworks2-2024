@@ -1,9 +1,9 @@
 import {Container, Nav, Navbar} from 'react-bootstrap';
-
+import style from"@/styles/Navbar.module.css";
 export default function Menu() {
   return (
     <Container>
-    <Navbar expand="sm" className="border rounded degrademenu p-1">
+    <Navbar expand="sm" className={`${style.degrademenu} border rounded degrademenu p-1`}>
         <Navbar.Brand href="/">6V</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
