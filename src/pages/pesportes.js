@@ -10,12 +10,12 @@ export default function Pesportes({produtos}) {
             LISTA DE PRODUTOS DE Esportes
         </Container>
         <Container>
-            <div className="row">
-                {produtos.map(produto=>
-                <CardProd titulo={produto.titulo} descricao={produto.descricao} preco={produto.preco}
-                key={produto.id}/>
-                )
-                }
+            <div className="row row-col-1 row-cols-md-5 g-3">
+            {produtos.map(produto=>
+                <div key={produto.id}> 
+                    <CardProd titulo={produto.titulo} descricao={produto.descricao} preco={produto.preco}/>
+                </div>
+            )}
             </div>
         </Container>
         <Footer>

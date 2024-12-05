@@ -1,11 +1,13 @@
 export default function CardProd(props) {
     return <>
-    <div className="col-sm-6 mb-3 mb-sm-0">
-        <div className="card" key={props.id}>
+    <div className="col text-center">
+        <div className="card h-100">
         <div className="card-body">
             <h5 className="card-title">{props.titulo}</h5>
-            <p className="card-text">{props.descricao}</p>
-            <a href="#" className="btn btn-primary">{props.preco}</a>
+            <p className="card-text">{props.preco}</p>
+        </div>
+        <div>
+            <small className="text-body-secundy"> Last update 3 mins ago</small>
         </div>
         </div>
     </div>
